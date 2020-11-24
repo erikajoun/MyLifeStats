@@ -1,5 +1,3 @@
-<img src="./screenshots/logo.png" width="150" height="150"/>
-
 # MyLifeStats
 A daily task planner gamification app that lets you visualize your everyday tasks as part of a video game. Choose real life stats you want to improve on, and gain points towards them by completing self-defined tasks.
 
