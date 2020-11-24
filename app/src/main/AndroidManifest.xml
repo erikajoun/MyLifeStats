@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mystats">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.mystats.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <receiver
+            android:name=".service.AlarmReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name=".service.DatabaseService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name=".activities.PhotoActivity"
+            android:label="Task Photo/Explanation"
+            android:parentActivityName=".activities.ToDoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.NewStatActivity"
+            android:label="Add/Edit Stat"
+            android:parentActivityName=".activities.StatsSettingsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.ChartSettingsActivity"
+            android:label="Chart Settings"
+            android:parentActivityName=".activities.StatsSettingsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.StatsSettingsActivity"
+            android:label="Stats"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.TasksHistoryActivity"
+            android:label="Task History"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mystats.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.NewTaskActivity"
+            android:label="Add Task"
+            android:parentActivityName=".activities.ToDoActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mystats.activities.ToDoActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ToDoActivity"
+            android:label="To Do"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mystats.activities.MainActivity" />
+        </activity>
+        <activity android:name=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

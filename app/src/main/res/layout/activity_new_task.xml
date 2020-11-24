@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ToDoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:id="@+id/linear_layout_inner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_24sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="Task Name:" />
+
+                <EditText
+                    android:id="@+id/edit_title"
+                    style="@style/text_view_style"
+                    android:inputType="textAutoComplete"
+                    android:maxLength="80"
+                    android:textCursorDrawable="@null"
+                    android:layout_marginBottom="@dimen/_32sdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="Description (Optional):" />
+
+                <EditText
+                    android:id="@+id/edit_desc"
+                    style="@style/text_view_style"
+                    android:inputType="textAutoComplete"
+                    android:maxLength="100"
+                    android:textCursorDrawable="@null"
+                    android:layout_marginBottom="@dimen/_32sdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="Deadline:" />
+
+                <RadioGroup
+                    android:id="@+id/date_radiogroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_16sdp">
+                </RadioGroup>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_32sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="Stat:" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_32sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="Difficulty (Reward):" />
+
+                <RadioGroup
+                    android:id="@+id/value_radiogroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_32sdp">
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/penalty_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="Importance (Penalty):" />
+
+                <RadioGroup
+                    android:id="@+id/penalty_radiogroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_32sdp">
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/custom_interval_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_32sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="Enter Number of Days:"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/repeat_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="Repeats:" />
+
+                <Spinner
+                    android:id="@+id/repeat_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/custom_interval_edittext"
+                    style="@style/text_view_style"
+                    android:layout_width="@dimen/_128sdp"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
+                    android:textCursorDrawable="@null"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_32sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:text="Private Task (Will be hidden in Task History):" />
+
+                <CheckBox
+                    android:id="@+id/keepprivate_checkbox"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp" />
+
+                <Button
+                    android:id="@+id/button_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_marginTop="@dimen/_32sdp"
+                    android:text="Confirm" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

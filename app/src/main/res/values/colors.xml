@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00d9ff</color>
+    <color name="colorPrimaryLight">#64b5f6</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FFFF9800</color>
+    <color name="colorTextPrimary">@android:color/white</color>
+    <color name="colorScreenBackground">#fff3e0</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLightGray">#E0E0E0</color>
+    <color name="colorDarkGray">#C8C8C8</color>
+
+    <color name="colorPrimaryMorning">#00d9ff</color>
+    <color name="colorPrimaryEvening">#ffc34a</color>
+    <color name="colorPrimaryNight">#000000</color>
+
+    <color name="cardColor">#66FFFFFF</color>
+
+    <color name="webColorNight">#FFFFFF</color>
+
+    <color name="colorAddMorning">#FFFFFF</color>
+    <color name="colorAddEvening">#ffc34a</color>
+    <color name="colorAddNight">#575757</color>
+
+    <color name="colorField">#66FFFFFF</color>
+
+    <color name="chartFillColorEvening">#ffe9ab</color>
+
+    <color name="colorSpinnerPopupMorning">#c4f5fe</color>
+    <color name="colorSpinnerPopupEvening">#ffd27f</color>
+    <color name="colorSpinnerPopupNight">#7f7f88</color>
+
+    <color name="colorPositiveButtonMorning">#ffffff</color>
+    <color name="colorPositiveButtonPressedMorning">#E0E0E0</color>
+    <color name="colorNegativeButtonMorning">#E0E0E0</color>
+    <color name="colorNegativeButtonPressedMorning">#C8C8C8</color>
+
+    <color name="colorPositiveButtonEvening">#ffe9ab</color>
+    <color name="colorPositiveButtonPressedEvening">#ebd18a</color>
+    <color name="colorNegativeButtonEvening">#ffc680</color>
+    <color name="colorNegativeButtonPressedEvening">#ebb36e</color>
+
+    <color name="colorPositiveButtonNight">#656569</color>
+    <color name="colorPositiveButtonPressedNight">#383838</color>
+    <color name="colorNegativeButtonNight">#474747</color>
+    <color name="colorNegativeButtonPressedNight">#212121</color>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_16sdp">
+
+        <LinearLayout
+            android:id="@+id/center_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <Button
+                android:id="@+id/take_photo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:text="Add Photo" />
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/_8sdp" />
+
+            <Button
+                android:id="@+id/rotate_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Rotate Photo" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/explanation_textview"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:textSize="@dimen/_14ssp"
+            android:text="Explanation:" />
+
+        <EditText
+            android:id="@+id/edit_explanation"
+            style="@style/text_view_style"
+            android:maxLength="500"
+            android:textCursorDrawable="@null"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/explanation_save"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="Confirm" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

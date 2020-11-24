@@ -1,0 +1,67 @@
+<resources>
+    <style name="MorningTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryMorning</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:windowBackground">@drawable/my_morning_gradient</item>
+        <!--<item name="android:fontFamily">@font/press_start_2p</item>-->
+    </style>
+
+    <style name="EveningTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryEvening</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:windowBackground">@drawable/my_evening_gradient</item>
+        <!--<item name="android:fontFamily">@font/press_start_2p</item>-->
+    </style>
+
+    <style name="NightTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryNight</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:windowBackground">@drawable/my_night_gradient</item>
+        <item name="android:itemBackground">@color/colorPositiveButtonNight</item>
+        <!--<item name="android:fontFamily">@font/press_start_2p</item>-->
+    </style>
+
+    <style name="text_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:background">@color/colorField</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="MorningCalendar" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="backgroundColor">#66FFFFFF</item>
+    </style>
+
+    <style name="EveningCalendar" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimaryEvening</item>
+        <item name="backgroundColor">#66FFFFFF</item>
+    </style>
+
+    <style name="NightCalendar" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorDarkGray</item>
+        <item name="backgroundColor">#66FFFFFF</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--<item name="android:fontFamily">@font/press_start_2p</item>-->
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="CustomTabTextSize" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/_10ssp</item>
+    </style>
+</resources>
