@@ -137,8 +137,7 @@ public class MainActivity extends AppCompatActivity {
         chart.setScaleY((float) chart_size / 100);
 
         XAxis xAxis = chart.getXAxis();
-        xAxis.setTypeface(Typeface.DEFAULT_BOLD);
-        xAxis.setTextSize(14);
+        xAxis.setTextSize(18);
         xAxis.setTextColor(mChartWebColor);
 
         YAxis yAxis = chart.getYAxis();
