@@ -14,7 +14,11 @@ This app also lets you take pictures when you complete tasks as proof of complet
 <img src="./screenshots/main_evening.png" width="272" height="420" />
 <img src="./screenshots/main_night.png" width="272" height="420" />
 </p>
+<p float="left">
 <img src="./screenshots/stats_morning.png" width="272" height="420" />
+<img src="./screenshots/stats_evening.png" width="272" height="420" />
+<img src="./screenshots/stats_night.png" width="272" height="420" />
+</p>
 
 ### To-Do List
 - Create new tasks quickly and easily with customizable rewards, penalties, deadlines and repeat intervals
