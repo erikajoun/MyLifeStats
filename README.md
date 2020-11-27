@@ -11,8 +11,10 @@ This app also lets you take pictures when you complete tasks as proof of complet
 - Press "To Do" to start the day's tasks
 <p float="left">
 <img src="./screenshots/main_morning.png" width="272" height="420" />
-<img src="./screenshots/stats_morning.png" width="272" height="420" />
+<img src="./screenshots/main_evening.png" width="272" height="420" />
+<img src="./screenshots/main_night.png" width="272" height="420" />
 </p>
+<img src="./screenshots/stats_morning.png" width="272" height="420" />
 
 ### To-Do List
 - Create new tasks quickly and easily with customizable rewards, penalties, deadlines and repeat intervals
