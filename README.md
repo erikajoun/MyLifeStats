@@ -11,13 +11,7 @@ This app also lets you take pictures when you complete tasks as proof of complet
 - Press "To Do" to start the day's tasks
 <p float="left">
 <img src="./screenshots/main_morning.png" width="272" height="420" />
-<img src="./screenshots/main_evening.png" width="272" height="420" />
-<img src="./screenshots/main_night.png" width="272" height="420" />
-</p>
-<p float="left">
-<img src="./screenshots/stats_morning.png" width="272" height="420" />
-<img src="./screenshots/stats_evening.png" width="272" height="420" />
-<img src="./screenshots/stats_night.png" width="272" height="420" />
+<img src="./screenshots/stats_morning.png" width="272" height="420"
 </p>
 
 ### To-Do List
@@ -35,6 +29,5 @@ This app also lets you take pictures when you complete tasks as proof of complet
 ### Task History
 - The task history records your completed, cancelled and missed tasks
 - It can be shared with accountability buddies with an option to filter by date and keep certain tasks private
-<img src="./screenshots/taskhistory_complete_cooking.png" width="272" height="420" />
 
 ### [Link to the APK File](https://drive.google.com/file/d/1_Duwxvquy771WhmDOKegpYu_FFuz9MG9/view?usp=sharing)
